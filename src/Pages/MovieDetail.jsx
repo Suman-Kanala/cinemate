@@ -21,7 +21,7 @@ export const MovieDetail = () => {
       setMoie(response);
     };
     dataFetch();
-  }, []);
+  }, [movie_id]);
 
   const imdb = `https://www.imdb.com/title/${movie.imdb_id}`;
 
