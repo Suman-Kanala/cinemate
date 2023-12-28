@@ -52,7 +52,9 @@ export const Header = () => {
             </NavLink>
           </div>
           <div className=" max-md:hidden text-xl font-mono flex justify-around w-96 ">
-            <NavLink to="/">Home</NavLink>
+            <NavLink to="/" end>
+              Home
+            </NavLink>
 
             <NavLink to="/movies/popular">Popular</NavLink>
             <NavLink to="/movies/top">Top rated</NavLink>
@@ -98,6 +100,7 @@ export const Header = () => {
               to="/"
               className="dark:text-white  "
               onClick={() => handleClick()}
+              end
             >
               Home{" "}
             </NavLink>
